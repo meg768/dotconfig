@@ -6,7 +6,6 @@ function loadConfig(fileName = '.config') {
 
 	if (!fs.existsSync(configFile)) {
 		configFile = Path.join(Path.dirname(process.argv[1]), fileName);
-		console.log(configFile);
 	}
 
 	let config = {};
